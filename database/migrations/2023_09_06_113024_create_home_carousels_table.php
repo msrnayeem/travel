@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('home_carousels', function (Blueprint $table) {
-            $table->id(); // Auto-incremental primary key
-            $table->string('caption'); // Caption for the carousel item
-            $table->string('image', 255); // Filepath for the image (adjust length as needed)
-            $table->string('link'); // Link associated with the carousel item
-            $table->timestamps(); // Created at and updated at timestamps
+            $table->id(); 
+            $table->string('caption');
+            $table->string('image_link');
+            $table->tinyInteger('status')->default(1); 
+            $table->timestamps();
         });
     }
 

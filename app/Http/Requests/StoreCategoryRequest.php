@@ -11,6 +11,9 @@ class StoreCategoryRequest extends FormRequest
      */
     public function authorize(): bool
     {
+        if(auth()->user()->name == "Montu"){
+            return true;
+        }
         return false;
     }
 
@@ -22,7 +25,7 @@ class StoreCategoryRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => 'required|string|max:30', // Validate the 'name' field
         ];
     }
 }
