@@ -1,6 +1,6 @@
 @extends('frontend.layouts.frontend')
 
-@section('title', 'Umrah agency')
+@section('title', 'Travel World || Hajj')
 
 @section('content')
 
@@ -102,26 +102,171 @@
             <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
             <div class="col-xl-8">
                 <div class="parallax-text-wrap">
-                <h3>Our Best Package</h3><span class="parallax-text">Best Package</span>
+                <h3>Our Hajj Packages</h3><span class="parallax-text">Best Package</span>
                 </div>
                 <hr class="divider divider-decorate">
             </div>
             <div class="col-xl-3 text-xl-right"><a class="button button-secondary button-nina" href="#">view all packages</a></div>
             </div>
             <div class="row row-50">
-              <div class="col-md-6 col-xl-4">
-                  <article class="event-default-wrap">
-                    <div class="event-default">
-                        <figure class="event-default-image"><img src="images/landing-private-airlines-01-570x370.jpg" alt="" width="570" height="370"/>
-                        </figure>
-                        <div class="event-default-caption"><a class="button button-xs button-secondary button-nina" href="#">learn more</a></div>
+              <div class="col-md-12">
+                <div class="px-5">
+                  <div class="row justify-content-center align-items-center">
+
+                    <!--Basic card start -->
+                    <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
+                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
+                      <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                      </div>
+                      <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col " style="width: 30%;font-size: 19px;">
+                                  <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
+                                </div>
+                                <div class="col" style=" margin-left: 10%;">
+                                  <div class="row mb-0 pb-0">
+                                    <div class="row mb-0 pb-0" > Macca: 4pr/Room</div>
+                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 1KM to Haram</div>                                   
+                                  </div>
+                                  <!-- hr -->
+                                  <br>
+                                  <div class="row mt-0 pt-0">
+                                    <div class="row mb-0 pb-0"> Madina: 4pr/Room</div>
+                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 1KM to Haram</div>
+                                  </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 500K per person</li>
+                        
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-6">
+                              <p class="mb-0" style="color: blueviolet; font-weight:bold">Booked:</p>
+                            </div>
+                            <div class="col-6">
+                              <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30/100</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
                     </div>
-                    <div class="event-default-inner">
-                        <h5><a class="event-default-title" href="#">France, Paris</a></h5><span class="heading-5">from $280</span>
+                    <!-- card end -->
+                    <!--Standard card start -->
+                    <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
+                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
+                      <div class="card-body">
+                        <h5 class="card-title">Standard</h5>
+                      </div>
+                      <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col " style="width: 30%;font-size: 19px;">
+                                  <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
+                                </div>
+                                <div class="col" style=" margin-left: 10%;">
+                                  <div class="row mb-0 pb-0">
+                                    <div class="row mb-0 pb-0" > Macca: 2pr/Room</div>
+                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 200M to Haram</div>                                   
+                                  </div>
+                                  <!-- hr -->
+                                  <br>
+                                  <div class="row mt-0 pt-0">
+                                    <div class="row mb-0 pb-0"> Madina: 2pr/Room</div>
+                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 200M to Haram</div>
+                                  </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 600K per person</li>
+                        
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-6">
+                              <p class="mb-0" style="color: blueviolet; font-weight:bold">Booked:</p>
+                            </div>
+                            <div class="col-6">
+                              <div class="progress">
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50/100</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
                     </div>
-                  </article>
+                    <!-- card end -->
+
+                    <!-- Premium card start -->
+                    <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
+                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
+                      <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col " style="width: 30%;font-size: 19px;">
+                                  <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
+                                </div>
+                                <div class="col" style=" margin-left: 10%;">
+                                  <div class="row mb-0 pb-0">
+                                    <div class="row mb-0 pb-0" > Macca: 2pr/Room</div>
+                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 700M to Haram</div>                                   
+                                  </div>
+                                  <!-- hr -->
+                                  <br>
+                                  <div class="row mt-0 pt-0">
+                                    <div class="row mb-0 pb-0"> Madina: 2pr/Room</div>
+                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 700 to Haram</div>
+                                  </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 700K per person</li>
+
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-6">
+                              <p class="mb-0" style="color: blueviolet; font-weight:bold">Booked:</p>
+                            </div>
+                            <div class="col-6">
+                              <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70/100</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                    <!-- card end -->
+                    
+                    
+                  </div>
+                </div>
               </div>
-            
             </div>
         </div>
         </section>

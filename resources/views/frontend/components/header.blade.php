@@ -31,7 +31,7 @@
               <!-- RD Navbar Toggle-->
               <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
               <!-- RD Navbar Brand-->
-              <div class="rd-navbar-brand"><a class="brand-name" href="{{ route('frontend.index') }}"><img class="logo-default" src="images/logo-default-208x46.png" alt="" width="208" height="46"/><img class="logo-inverse" src="images/logo-inverse-208x46.png" alt="" width="208" height="46"/></a></div>
+              <div class="rd-navbar-brand"><a class="brand-name" href="{{ route('frontend.index') }}"><img class="logo-default" src="{{ asset('images/logo/header_logo.png') }}"/></a></div>
             </div>
             <div class="rd-navbar-aside-center">
               <div class="rd-navbar-nav-wrap">

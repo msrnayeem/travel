@@ -1,6 +1,6 @@
 @extends('frontend.layouts.frontend')
 
-@section('title', 'Umrah agency || About')
+@section('title', 'Travel World || About')
 
 @section('content')
 

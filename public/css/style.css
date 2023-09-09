@@ -267,11 +267,7 @@ a[href*='mailto'] {
 	display: none;
 }
 
-img {
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-}
+
 
 hr {
 	border-color: #dfe1ea;
@@ -11905,7 +11901,10 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-dropdown {
 	display: none;
 }
-
+.logo-default{
+	width: 40%;
+	height: auto;
+}
 .rd-navbar-dropdown li+li,
 .rd-navbar-megamenu li+li {
 	border-top: 1px solid #f7f7f7;
@@ -19478,3 +19477,11 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 	background: #000000a8;
 	content: '';
 }
+
+
+/* hajj package container forn size */
+@media (max-width: 300px) {
+	.card{
+	  font-size: 11px; /* Font size for screens less than 300px */
+	}
+  }
