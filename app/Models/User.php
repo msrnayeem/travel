@@ -42,4 +42,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * Get the testimonials for the user.
+     */
+    public function testimonials()
+    {
+        return $this->hasMany(Testimonial::class);
+    }
 }

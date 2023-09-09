@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\frontEnd\FrontendController;
+use App\Http\Controllers\HajjController;
+use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::resource('categories', CategoryController::class);
+
+Route::resource('tours', TourController::class);
+Route::resource('hajjz', HajjController::class);
+
+
+//frontend routes
+Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');
+Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('frontend.contact');
+Route::get('/typography', [FrontendController::class, 'typography'])->name('frontend.typography');

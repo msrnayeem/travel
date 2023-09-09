@@ -13,8 +13,12 @@ return new class extends Migration
     {
         Schema::create('home_carousels', function (Blueprint $table) {
             $table->id(); 
+            $table->string('title');
+            $table->string('title_color',10);
             $table->string('caption');
+            $table->string('caption_color',10);
             $table->string('image_link');
+            $table->string('button_background_color',10);
             $table->tinyInteger('status')->default(1); 
             $table->timestamps();
         });
