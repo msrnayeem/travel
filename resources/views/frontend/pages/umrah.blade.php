@@ -1,6 +1,6 @@
 @extends('frontend.layouts.frontend')
 
-@section('title', 'Travel World || Home')
+@section('title', 'Travel World || Umrah')
 
 @section('content')
 
@@ -92,73 +92,12 @@
             </div>
           </div>
           <div class="container container-bigger form-request-wrap form-request-wrap-modern" style="opacity: 0.9;">
-            <div class="row row-fix justify-content-sm-center justify-content-lg-end">
-                <div class="col-lg-6 col-xxl-5">
-                    <div class="form-request form-request-modern bg-gray-lighter novi-background">
-                        <h4>Find your Tour</h4>
-                        <!-- RD Mailform-->
-                        <form class="rd-mailform form-fix">
-                            <div class="row row-20 row-fix">
-
-                                <div class="col-sm-12">
-                                    <label class="form-label-outside">To</label>
-                                    <div class="form-wrap form-wrap-inline">
-                                        <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="tour" id="tour-type" onchange="category()">
-                                            <option value="1">Umrah</option>
-                                            <option value="2">Hajj</option>
-                                            <option value="3">Tour</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12" id="destination-container" style="display: none;">
-                                    <label class="form-label-outside">Destination</label>
-                                    <div class="form-wrap form-wrap-inline">
-                                        <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="destination" id="destination-select">
-                                            <option value="1">India</option>
-                                            <option value="2">Thailand</option>
-                                            <option value="3">Abu dhabi</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                
-                                <div class="col-sm-12 col-lg-6" id="depart-container" style="display: block;">
-                                    <label class="form-label-outside">Depart Date</label>
-                                    <div class="form-wrap form-wrap-validation">
-                                        <!-- Select -->
-                                        <input class="form-input" id="dateForm" name="date" type="text" data-time-picker="date">
-                                        <label class="form-label" for="dateForm">Choose the date</label>
-                                        <!--select.form-input.select-filter(data-placeholder="All", data-minimum-results-for-search="Infinity",  name='city')-->
-                                        <!--  option(value="1") Choose the date-->
-                                        <!--  option(value="2") Primary-->
-                                        <!--  option(value="3") Middle-->
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-6" id="lenght-container" style="display: block;">
-                                    <label class="form-label-outside">Duration</label>
-                                    <div class="form-wrap form-wrap-validation">
-                                        <!-- Select 2-->
-                                        <select class="form-input select-filter" data-placeholder="All" data-minimum-results-for-search="Infinity" name="city">
-                                        <option value="1">Any length</option>
-                                        <option value="7">7 days</option>
-                                        <option value="15">15 days</option>
-                                        <option value="30">30 days</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-wrap form-button">
-                                <button class="button button-block button-secondary" type="submit">Search package</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         </div>
       </section>
 
-      <section class="section section-variant-1 bg-default novi-background bg-cover"> 
+    <section class="section section-variant-1 bg-default novi-background bg-cover"> 
         <div class="container container-wide">
             <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
             <div class="col-xl-8">
@@ -176,18 +115,15 @@
 
                     <!--Basic card start -->
                     <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
-                        <div class="image-container" style="overflow: hidden; height: 220px; width: 290px;">
-                            <img class="card-img-top" src="{{ asset('images/hajj_package/hajj_1.jpeg') }}" alt="package_1.jpg">
-                        </div>
+                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
                       <div class="card-body">
-                        <h5 class="card-title">Standard - Hajj</h5>
+                        <h5 class="card-title">Basic</h5>
                       </div>
                       <ul class="list-group list-group-flush">
 
                         <li class="list-group-item">
                             <div class="row align-items-center">
-                                
-                                <div class="col" style="width: 30%;font-size: 19px;">
+                                <div class="col " style="width: 30%;font-size: 19px;">
                                   <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
                                 </div>
                                 <div class="col" style=" margin-left: 10%;">
@@ -221,18 +157,17 @@
                         </li>
 
                       </ul>
-                      <div class="card-body d-flex justify-content-center">
-                        <a href="#" class="button button-sm button-secondary">Book Now</a>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                       </div>
                     </div>
                     <!-- card end -->
                     <!--Standard card start -->
                     <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
-                        <div class="image-container" style="overflow: hidden; height: 220px; width: 290px;">
-                            <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
-                        </div>
+                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
                       <div class="card-body">
-                        <h5 class="card-title">Standard - Umrah</h5>
+                        <h5 class="card-title">Standard</h5>
                       </div>
                       <ul class="list-group list-group-flush">
 
@@ -256,7 +191,7 @@
                             </div>
                         </li>
 
-                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 160K per person</li>
+                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 600K per person</li>
                         
                         <li class="list-group-item">
                           <div class="row">
@@ -265,24 +200,23 @@
                             </div>
                             <div class="col-6">
                               <div class="progress">
-                                <div class="progress-bar  bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50/100</div>
+                                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50/100</div>
                               </div>
                             </div>
                           </div>
                         </li>
 
                       </ul>
-                      <div class="card-body d-flex justify-content-center">
-                        <a href="#" class="button button-sm button-secondary">Book Now</a>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                       </div>
                     </div>
                     <!-- card end -->
 
                     <!-- Premium card start -->
                     <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
-                        <div class="image-container" style="overflow: hidden; height: 220px; width: 290px;">
-                            <img class="card-img-top" src="{{ asset('images/hajj_package/1.jpg') }}" alt="package_1.jpg">
-                        </div>
+                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
                       <div class="card-body">
                         <h5 class="card-title">Premium</h5>
                       </div>
@@ -322,8 +256,9 @@
                         </li>
 
                       </ul>
-                      <div class="card-body d-flex justify-content-center">
-                        <a href="#" class="button button-sm button-secondary">Book Now</a>
+                      <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
                       </div>
                     </div>
                     <!-- card end -->
@@ -335,6 +270,48 @@
             </div>
         </div>
         </section>
+
+        <!-- our advantages-->
+        <section class="section section-lg bg-gray-lighter novi-background bg-cover text-center">
+        <div class="container container-wide">
+            <h3>our services</h3>
+            <div class="divider divider-decorate"></div>
+            <div class="row row-50 justify-content-sm-center text-left">
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal box-minimal-border">
+                <div class="box-minimal-icon novi-icon mdi mdi-airplane"></div>
+                <p class="big box-minimal-title">Air Tickets</p>
+                <hr>
+                <div class="box-minimal-text text-spacing-sm">At our travel agency, you can book air tickets to any world destination. We also provide online ticket booking via our website in just a couple of steps.</div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal box-minimal-border">
+                <div class="box-minimal-icon novi-icon mdi mdi-map"></div>
+                <p class="big box-minimal-title">Voyages & Cruises</p>
+                <hr>
+                <div class="box-minimal-text text-spacing-sm">Besides regular tours and excursions, we also offer a variety of cruises & sea voyages for different customers looking for awesome experiences.</div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal box-minimal-border">
+                <div class="box-minimal-icon novi-icon mdi mdi-city"></div>
+                <p class="big box-minimal-title">Hotel Bookings</p>
+                <hr>
+                <div class="box-minimal-text text-spacing-sm">We offer a wide selection of hotel ranging from 5-star ones to small properties located worldwide so that you could book a hotel you like.</div>
+                </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3">
+                <article class="box-minimal box-minimal-border">
+                <div class="box-minimal-icon novi-icon mdi mdi-beach"></div>
+                <p class="big box-minimal-title">Tailored Summer Tours</p>
+                <hr>
+                <div class="box-minimal-text text-spacing-sm">Our agency provides varied tours including tailored summer tours for clients who are searching for an exclusive and memorable vacation.</div>
+                </article>
+            </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Tips & tricks-->
     <section class="section section-lg novi-background bg-cover bg-default text-center">
@@ -473,35 +450,3 @@
    
 
 @endsection
-@push('scripts')
-
-<script>
-
-    function category(){
-        var selected = document.getElementById('tour-type').value;
-        var destination = document.getElementById('destination-container');
-        var lenght = document.getElementById('lenght-container');
-        var depart = document.getElementById('depart-container');
-
-        //1= umra 2 = hajj 3 = tour
-
-        if(selected == 3){
-            destination.style.display = 'block';
-            lenght.style.display = 'block';
-            depart.style.display = 'block';
-        }
-        else if(selected == 2){
-            destination.style.display = 'none';
-            lenght.style.display = 'none';
-            depart.style.display = 'none';
-        }
-        else{
-            destination.style.display = 'none';
-            lenght.style.display = 'block';
-            depart.style.display = 'block';
-        }
-
-    }
-</script>
-
-@endpush

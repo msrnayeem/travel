@@ -9,11 +9,11 @@
                 <li class="box-inline list-inline-item"><span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
                   <ul class="list-comma">
                     <li><a href="tel:#">+8801777777777</a></li>
-                    <li><a href="tel:#">1-800-6780-345</a></li>
+                    <li><a href="tel:#">+8801777777777</a></li>
                   </ul>
                 </li>
                 <li class="box-inline list-inline-item"><span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span><a href="#">Dhaka, Bangladesh</a></li>
-                <li class="box-inline list-inline-item"><span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-email"></span><a href="mailto:#">mail@umrah.org</a></li>
+                <li class="box-inline list-inline-item"><span class="icon novi-icon icon-md-smaller icon-secondary mdi mdi-email"></span><a href="mailto:#">mail@travelworld.org</a></li>
               </ul>
               <ul class="list-inline">
                 <li class="list-inline-item"><a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a></li>
@@ -40,8 +40,8 @@
                   <li class="{{ request()->routeIs('frontend.index') ? 'active' : '' }}">
                     <a href="{{ route('frontend.index') }}">Home</a>
                   </li>
-                  <li class="">
-                    <a href="">Umrah</a>
+                  <li class="{{ request()->routeIs('umrahs.index') ? 'active' : '' }}">
+                    <a href="{{ route('umrahs.index') }}">Umrah</a>
                   </li>
                   <li class="{{ request()->routeIs('hajjz.index') ? 'active' : '' }}">
                     <a href="{{ route('hajjz.index') }}">Hajj</a>

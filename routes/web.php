@@ -3,6 +3,7 @@
 use App\Http\Controllers\frontEnd\FrontendController;
 use App\Http\Controllers\HajjController;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\UmrahController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,7 +24,7 @@ Route::get('/welcome', function () {
 
 Route::resource('tours', TourController::class);
 Route::resource('hajjz', HajjController::class);
-
+Route::resource('umrahs', UmrahController::class);
 
 //frontend routes
 Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');

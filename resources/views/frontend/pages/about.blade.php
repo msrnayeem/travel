@@ -37,7 +37,7 @@
               <article class="box-minimal">
                 <div class="box-minimal-header">
                   <div class="box-minimal-icon box-minimal-icon-lg novi-icon mdi mdi-map"></div>
-                  <h6 class="box-minimal-title">Voyages & Cruises</h6>
+                  <h6 class="box-minimal-title">Hajj Umrah</h6>
                 </div>
                 <p>Besides regular tours and excursions, we also offer a variety of cruises & sea voyages for different customers  looking for awesome experiences.</p>
               </article>
@@ -55,9 +55,9 @@
               <article class="box-minimal">
                 <div class="box-minimal-header">
                   <div class="box-minimal-icon box-minimal-icon-lg novi-icon mdi mdi-beach"></div>
-                  <h6 class="box-minimal-title">Tailored Summer Tours</h6>
+                  <h6 class="box-minimal-title">Tours</h6>
                 </div>
-                <p>Our agency provides varied tours including tailored summer tours for clients who are searching for an exclusive and memorable vacation.</p>
+                <p>Our agency provides varied tours including summer tours for clients who are searching for an exclusive and memorable vacation.</p>
               </article>
             </div>
           </div>

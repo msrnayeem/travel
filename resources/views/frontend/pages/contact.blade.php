@@ -14,7 +14,7 @@
               <article class="box-simple">
                 <div class="box-simple-icon novi-icon mdi mdi-map-marker"></div>
                 <h6>Address</h6>
-                <div class="box-simple-text"><a href="#">2130 Fulton Street, Chicago, IL <br> 94117-1080 USA</a></div>
+                <div class="box-simple-text"><a href="#">TravelWorld Ltd<br> Dhaka,Bangladesh</a></div>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
@@ -24,8 +24,8 @@
                 <h6>phones</h6>
                 <div class="box-simple-text">
                   <ul class="list-comma list-0">
-                    <li><a href="tel:#">1-800-6543-765</a></li>
-                    <li><a href="tel:#">1-800-3434-876</a></li>
+                    <li><a href="tel:#">+8801777777777</a></li>
+                    <li><a href="tel:#">+8801777777777</a></li>
                   </ul>
                 </div>
               </article>
@@ -37,7 +37,7 @@
                 <h6>e-mail</h6>
                 <div class="box-simple-text">
                   <ul class="list-comma list-0">
-                    <li><a href="mailto:#">mail@demolink.org</a></li>
+                    <li><a href="mailto:#">mail@travelworld.org</a></li>
                   </ul>
                 </div>
               </article>
@@ -72,14 +72,14 @@
                   <!-- RD Mailform-->
                   <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
                     <div class="row row-fix row-20">
-                      <div class="col-md-6">
+                      <div class="col-md-8">
                         <div class="form-wrap form-wrap-validation">
                           <label class="form-label-outside" for="form-1-name">Name</label>
                           <input class="form-input" id="form-1-name" type="text" name="name"/>
                         </div>
                       </div>
                       
-                      <div class="col-md-12">
+                      <div class="col-md-8">
                         <div class="form-wrap form-wrap-validation">
                           <label class="form-label-outside" for="form-1-email">E-mail</label>
                           <input class="form-input" id="form-1-email" type="email" name="email"/>
