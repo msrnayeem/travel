@@ -6,7 +6,7 @@
 
 <section class="section home-slider">
         <div class="swiper-form-wrap">
-          <!-- Swiper-->
+          <!-- Swiper -->
           <div
             class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left swiper-align-left-custom context-dark bg-gray-darker"
             data-loop="false"
@@ -110,12 +110,12 @@
             </div>
             <div class="row row-50">
               <div class="col-md-12">
-                <div class="px-5">
+                <div class="">
                   <div class="row justify-content-center align-items-center">
 
                     <!--Basic card start -->
                     <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
-                      <div class="image-container" style="overflow: hidden; height: 220px; width: 290px;">
+                      <div class="image-container" style="overflow: hidden; width:100%; height:auto;">
                             <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
                         </div>
                       <div class="card-body p-3">
@@ -124,35 +124,34 @@
                       <ul class="list-group list-group-flush">
 
                         <li class="list-group-item pb-2">
-                            <div class="row align-items-center">
-                                <div class="col " style="width: 30%;font-size: 19px;">
-                                  <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
+                            <div class="row align-items-center mx-auto">
+                                <div class="col-auto mx-auto px-0">
+                                  <img class="c-logo" src="{{ asset('images/umrah/hotel-1.png') }}"  alt="Hotel 1">
                                 </div>
-                                <div class="col" style=" margin-left: 10%;">
-                                  <div class="row mb-0 pb-0">
-                                    <div class="row mb-0 pb-0" > Macca: 4pr/Room</div>
-                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 1KM to Haram</div>                                   
-                                  </div>
+                                <div class="col-auto mx-auto px-0">
+                                  
+                                    <p class="p-thin"> Macca: 4pr/Room</p>
+                                    <p class="p-bold"> 1KM to Haram</p>                                   
+                                  
                                   <!-- hr -->
-                                  <br>
-                                  <div class="row mt-0 pt-0">
-                                    <div class="row mb-0 pb-0"> Madina: 4pr/Room</div>
-                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 1KM to Haram</div>
-                                  </div>
+                                  
+                                    <p class="p-thin"class="p-thin"> Madina: 4pr/Room</p>
+                                    <p class="p-bold" > 1KM to Haram</p>
+                                  
                                 </div>
                             </div>
                         </li>
 
-                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 500K per person</li>
+                        <li class="list-group-item font-weight-bold text-start"><span style="color: blueviolet; font-weight:bold">Fee:</span> 500K per person</li>
                         
                         <li class="list-group-item">
                           <div class="row">
                             <div class="col-6">
                               <p class="mb-0" style="color: blueviolet; font-weight:bold">Booked:</p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 my-auto">
                               <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30/100</div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60/100</div>
                               </div>
                             </div>
                           </div>
@@ -164,10 +163,12 @@
                       </div>
                     </div>
                     <!-- card end -->
-                   <!--Standard card start -->
+                  
+
+                    <!--Basic card start -->
                     <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
-                      <div class="image-container" style="overflow: hidden; height: 220px; width: 290px;">
-                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
+                      <div class="image-container" style="overflow: hidden; width:100%; height:auto;">
+                            <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
                         </div>
                       <div class="card-body p-3">
                         <h5 class="card-title mb-0">Standard</h5>
@@ -175,33 +176,32 @@
                       <ul class="list-group list-group-flush">
 
                         <li class="list-group-item pb-2">
-                            <div class="row align-items-center">
-                                <div class="col " style="width: 30%;font-size: 19px;">
-                                  <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
+                            <div class="row align-items-center mx-auto">
+                                <div class="col-auto mx-auto px-0">
+                                  <img class="c-logo" src="{{ asset('images/umrah/hotel-1.png') }}"  alt="Hotel 1">
                                 </div>
-                                <div class="col" style=" margin-left: 10%;">
-                                  <div class="row mb-0 pb-0">
-                                    <div class="row mb-0 pb-0" > Macca: 2pr/Room</div>
-                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 700M to Haram</div>                                   
-                                  </div>
+                                <div class="col-auto mx-auto px-0">
+                                  
+                                    <p class="p-thin"> Macca: 2pr/Room</p>
+                                    <p class="p-bold"> 600M to Haram</p>                                   
+                                  
                                   <!-- hr -->
-                                  <br>
-                                  <div class="row mt-0 pt-0">
-                                    <div class="row mb-0 pb-0"> Madina: 2pr/Room</div>
-                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 700M to Haram</div>
-                                  </div>
+                                  
+                                    <p class="p-thin"class="p-thin"> Madina: 2pr/Room</p>
+                                    <p class="p-bold" > 600M to Haram</p>
+                                  
                                 </div>
                             </div>
                         </li>
 
-                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 600K per person</li>
+                        <li class="list-group-item font-weight-bold text-start"><span style="color: blueviolet; font-weight:bold">Fee:</span> 600K per person</li>
                         
                         <li class="list-group-item">
                           <div class="row">
                             <div class="col-6">
                               <p class="mb-0" style="color: blueviolet; font-weight:bold">Booked:</p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 my-auto">
                               <div class="progress">
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50/100</div>
                               </div>
@@ -215,10 +215,12 @@
                       </div>
                     </div>
                     <!-- card end -->
-                   <!--Premium card start -->
+                  
+
+                    <!--Basic card start -->
                     <div class="card ml-2 mr-2 mb-5" style="width: 295px;">
-                      <div class="image-container" style="overflow: hidden; height: 220px; width: 290px;">
-                      <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
+                      <div class="image-container" style="overflow: hidden; width:100%; height:auto;">
+                            <img class="card-img-top" src="{{ asset('images/umrah/package_1.jpg') }}" alt="package_1.jpg">
                         </div>
                       <div class="card-body p-3">
                         <h5 class="card-title mb-0">Premium</h5>
@@ -226,35 +228,34 @@
                       <ul class="list-group list-group-flush">
 
                         <li class="list-group-item pb-2">
-                            <div class="row align-items-center">
-                                <div class="col " style="width: 30%;font-size: 19px;">
-                                  <img src="{{ asset('images/umrah/hotel-1.png') }}" height="41" width="41" alt="Hotel 1">
+                            <div class="row align-items-center mx-auto">
+                                <div class="col-auto mx-auto px-0">
+                                  <img class="c-logo" src="{{ asset('images/umrah/hotel-1.png') }}"  alt="Hotel 1">
                                 </div>
-                                <div class="col" style=" margin-left: 10%;">
-                                  <div class="row mb-0 pb-0">
-                                    <div class="row mb-0 pb-0" > Macca: 2pr/Room</div>
-                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 200M to Haram</div>                                   
-                                  </div>
+                                <div class="col-auto mx-auto px-0">
+                                  
+                                    <p class="p-thin"> Macca: Single Room</p>
+                                    <p class="p-bold"> 200M to Haram</p>                                   
+                                  
                                   <!-- hr -->
-                                  <br>
-                                  <div class="row mt-0 pt-0">
-                                    <div class="row mb-0 pb-0"> Madina: 2pr/Room</div>
-                                    <div class="row mt-0 pt-0 font-weight-bold" style="color: blueviolet;"> 200M to Haram</div>
-                                  </div>
+                                  
+                                    <p class="p-thin"class="p-thin"> Madina: Single Room</p>
+                                    <p class="p-bold" > 200M to Haram</p>
+                                  
                                 </div>
                             </div>
                         </li>
 
-                        <li class="list-group-item"><span style="color: blueviolet; font-weight:bold">Fee:</span> 700K per person</li>
+                        <li class="list-group-item font-weight-bold text-start"><span style="color: blueviolet; font-weight:bold">Fee:</span> 700K per person</li>
                         
                         <li class="list-group-item">
                           <div class="row">
                             <div class="col-6">
                               <p class="mb-0" style="color: blueviolet; font-weight:bold">Booked:</p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 my-auto">
                               <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70/100</div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30/100</div>
                               </div>
                             </div>
                           </div>
@@ -266,6 +267,8 @@
                       </div>
                     </div>
                     <!-- card end -->
+                  
+                  
                   </div>
                 </div>
               </div>
@@ -290,7 +293,7 @@
             <div class="col-sm-10 col-md-6 col-xl-3">
                 <article class="box-minimal box-minimal-border">
                 <div class="box-minimal-icon novi-icon mdi mdi-map"></div>
-                <p class="big box-minimal-title">Voyages & Cruises</p>
+                <p class="big box-minimal-title">Hajj & Umrah</p>
                 <hr>
                 <div class="box-minimal-text text-spacing-sm">Besides regular tours and excursions, we also offer a variety of cruises & sea voyages for different customers looking for awesome experiences.</div>
                 </article>
@@ -306,9 +309,9 @@
             <div class="col-sm-10 col-md-6 col-xl-3">
                 <article class="box-minimal box-minimal-border">
                 <div class="box-minimal-icon novi-icon mdi mdi-beach"></div>
-                <p class="big box-minimal-title">Tailored Summer Tours</p>
+                <p class="big box-minimal-title">Tours</p>
                 <hr>
-                <div class="box-minimal-text text-spacing-sm">Our agency provides varied tours including tailored summer tours for clients who are searching for an exclusive and memorable vacation.</div>
+                <div class="box-minimal-text text-spacing-sm">Our agency provides varied tours including tours for clients who are searching for an exclusive and memorable vacation.</div>
                 </article>
             </div>
             </div>

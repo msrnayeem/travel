@@ -58,7 +58,7 @@
                 </ul>
               </div>
             </div>
-            <div class="rd-navbar-aside-right"><a class="button button-sm button-secondary button-nina" href="#">Book now</a></div>
+           
           </div>
         </nav>
       </div>

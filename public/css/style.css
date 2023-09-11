@@ -11886,17 +11886,7 @@ html[class*="ie"] .dtp-hour-hand {
 	display: inline-block;
 }
 
-.rd-navbar-brand .logo-inverse {
-	display: none;
-}
 
-.breadcrumbs-custom-light .rd-navbar-brand .logo-inverse {
-	display: inline-block;
-}
-
-.breadcrumbs-custom-light .rd-navbar-brand .logo-default {
-	display: none;
-}
 
 .rd-navbar-dropdown {
 	display: none;
@@ -13228,6 +13218,7 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-fixed .rd-navbar-brand img {
 	max-width: 143px;
 	height: auto;
+	margin-left: -50px;
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
@@ -19487,8 +19478,8 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   }
 
 .card-img-top{
-	height : 220px;
-	width : 290 px;
+	height : auto;
+	width : 100%;
 	transform-origin: center;
 	transform: scale(var(--img-scale));
 	transition: transform 0.4s ease-in-out;
@@ -19499,4 +19490,27 @@ html[dir='rtl'] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 
   .card:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  .p-thin{
+	font-weight: 600;
+  }
+  .p-bold{
+	font-weight: 600;
+	color: blueviolet;
+	margin-top: 0px;
+  }
+  .c-logo{
+	width: 50px;
+	height: auto;
+  }
+  @media (max-width: 575px) {
+	.p-thin{
+		font-size: 14px;
+	  }
+	  .p-bold{
+		font-size: 14px;
+	  }
+	  .c-logo{
+		width: 45px;
+	}
   }
