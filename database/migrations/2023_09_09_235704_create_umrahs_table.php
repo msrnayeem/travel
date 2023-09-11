@@ -13,6 +13,16 @@ return new class extends Migration
     {
         Schema::create('umrahs', function (Blueprint $table) {
             $table->id();
+
+            $table->string('package_name');
+            $table->integer('people_in_room');
+            $table->integer('distance_mecca');
+            $table->integer('distance_medina');
+            $table->date('depart_date');
+            $table->date('return_date');
+            $table->decimal('price', 10, 2); // Example: 10 digits total, 2 decimal places
+            $table->integer('total_person');
+
             $table->timestamps();
         });
     }
