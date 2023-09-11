@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\frontEnd\FrontendController;
-use App\Http\Controllers\HajjController;
-use App\Http\Controllers\TourController;
-use App\Http\Controllers\UmrahController;
+use App\Http\Controllers\frontEnd\HajjController;
+use App\Http\Controllers\frontEnd\TourController;
+use App\Http\Controllers\frontEnd\UmrahController;
 use Illuminate\Support\Facades\Route;
 
 /*

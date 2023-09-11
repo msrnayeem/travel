@@ -1,19 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
+use App\Http\Controllers\Controller;
 
-use App\Models\HomeCarousel;
-use App\Http\Requests\StoreHomeCarouselRequest;
-use App\Http\Requests\UpdateHomeCarouselRequest;
+use App\Models\Tour;
+use App\Http\Requests\StoreTourRequest;
+use App\Http\Requests\UpdateTourRequest;
 
-class HomeCarouselController extends Controller
+
+class TourController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('frontend.pages.tour');
     }
 
     /**
@@ -27,7 +29,7 @@ class HomeCarouselController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreHomeCarouselRequest $request)
+    public function store(StoreTourRequest $request)
     {
         //
     }
@@ -35,7 +37,7 @@ class HomeCarouselController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(HomeCarousel $homeCarousel)
+    public function show(Tour $tour)
     {
         //
     }
@@ -43,7 +45,7 @@ class HomeCarouselController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(HomeCarousel $homeCarousel)
+    public function edit(Tour $tour)
     {
         //
     }
@@ -51,7 +53,7 @@ class HomeCarouselController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateHomeCarouselRequest $request, HomeCarousel $homeCarousel)
+    public function update(UpdateTourRequest $request, Tour $tour)
     {
         //
     }
@@ -59,7 +61,7 @@ class HomeCarouselController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(HomeCarousel $homeCarousel)
+    public function destroy(Tour $tour)
     {
         //
     }

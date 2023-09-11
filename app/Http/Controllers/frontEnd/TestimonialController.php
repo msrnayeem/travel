@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
 
-use App\Models\Umrah;
-use App\Http\Requests\StoreUmrahRequest;
-use App\Http\Requests\UpdateUmrahRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Testimonial;
+use App\Http\Requests\StoreTestimonialRequest;
+use App\Http\Requests\UpdateTestimonialRequest;
 
-class UmrahController extends Controller
+class TestimonialController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('frontend.pages.umrah');
+        //
     }
 
     /**
@@ -27,7 +28,7 @@ class UmrahController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreUmrahRequest $request)
+    public function store(StoreTestimonialRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class UmrahController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Umrah $umrah)
+    public function show(Testimonial $testimonial)
     {
         //
     }
@@ -43,7 +44,7 @@ class UmrahController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Umrah $umrah)
+    public function edit(Testimonial $testimonial)
     {
         //
     }
@@ -51,7 +52,7 @@ class UmrahController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateUmrahRequest $request, Umrah $umrah)
+    public function update(UpdateTestimonialRequest $request, Testimonial $testimonial)
     {
         //
     }
@@ -59,7 +60,7 @@ class UmrahController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Umrah $umrah)
+    public function destroy(Testimonial $testimonial)
     {
         //
     }

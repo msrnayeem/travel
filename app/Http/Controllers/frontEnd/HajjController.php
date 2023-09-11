@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
+use App\Http\Controllers\Controller;
 
-use App\Models\PackageImage;
-use App\Http\Requests\StorePackageImageRequest;
-use App\Http\Requests\UpdatePackageImageRequest;
+use App\Models\Hajj;
+use App\Http\Requests\StoreHajjRequest;
+use App\Http\Requests\UpdateHajjRequest;
 
-class PackageImageController extends Controller
+class HajjController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('frontend.pages.hajj');
     }
 
     /**
@@ -27,7 +28,7 @@ class PackageImageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePackageImageRequest $request)
+    public function store(StoreHajjRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class PackageImageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(PackageImage $packageImage)
+    public function show(Hajj $hajj)
     {
         //
     }
@@ -43,7 +44,7 @@ class PackageImageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(PackageImage $packageImage)
+    public function edit(Hajj $hajj)
     {
         //
     }
@@ -51,7 +52,7 @@ class PackageImageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePackageImageRequest $request, PackageImage $packageImage)
+    public function update(UpdateHajjRequest $request, Hajj $hajj)
     {
         //
     }
@@ -59,7 +60,7 @@ class PackageImageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(PackageImage $packageImage)
+    public function destroy(Hajj $hajj)
     {
         //
     }

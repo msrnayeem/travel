@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
+use App\Http\Controllers\Controller;
 
-use App\Models\Package;
-use App\Http\Requests\StorePackageRequest;
-use App\Http\Requests\UpdatePackageRequest;
+use App\Models\PackageImage;
+use App\Http\Requests\StorePackageImageRequest;
+use App\Http\Requests\UpdatePackageImageRequest;
 
-class PackageController extends Controller
+class PackageImageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +28,7 @@ class PackageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StorePackageRequest $request)
+    public function store(StorePackageImageRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class PackageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Package $package)
+    public function show(PackageImage $packageImage)
     {
         //
     }
@@ -43,7 +44,7 @@ class PackageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Package $package)
+    public function edit(PackageImage $packageImage)
     {
         //
     }
@@ -51,7 +52,7 @@ class PackageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePackageRequest $request, Package $package)
+    public function update(UpdatePackageImageRequest $request, PackageImage $packageImage)
     {
         //
     }
@@ -59,7 +60,7 @@ class PackageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Package $package)
+    public function destroy(PackageImage $packageImage)
     {
         //
     }

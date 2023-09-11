@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
+use App\Http\Controllers\Controller;
 
-use App\Models\News;
-use App\Http\Requests\StoreNewsRequest;
-use App\Http\Requests\UpdateNewsRequest;
+use App\Models\Package;
+use App\Http\Requests\StorePackageRequest;
+use App\Http\Requests\UpdatePackageRequest;
 
-class NewsController extends Controller
+class PackageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +28,7 @@ class NewsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreNewsRequest $request)
+    public function store(StorePackageRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class NewsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(News $news)
+    public function show(Package $package)
     {
         //
     }
@@ -43,7 +44,7 @@ class NewsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(News $news)
+    public function edit(Package $package)
     {
         //
     }
@@ -51,7 +52,7 @@ class NewsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateNewsRequest $request, News $news)
+    public function update(UpdatePackageRequest $request, Package $package)
     {
         //
     }
@@ -59,7 +60,7 @@ class NewsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(News $news)
+    public function destroy(Package $package)
     {
         //
     }

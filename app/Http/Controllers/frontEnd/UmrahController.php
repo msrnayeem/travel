@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
 
-use App\Models\Hajj;
-use App\Http\Requests\StoreHajjRequest;
-use App\Http\Requests\UpdateHajjRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Umrah;
+use App\Http\Requests\StoreUmrahRequest;
+use App\Http\Requests\UpdateUmrahRequest;
 
-class HajjController extends Controller
+class UmrahController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('frontend.pages.hajj');
+        return view('frontend.pages.umrah');
     }
 
     /**
@@ -27,7 +28,7 @@ class HajjController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreHajjRequest $request)
+    public function store(StoreUmrahRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class HajjController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Hajj $hajj)
+    public function show(Umrah $umrah)
     {
         //
     }
@@ -43,7 +44,7 @@ class HajjController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Hajj $hajj)
+    public function edit(Umrah $umrah)
     {
         //
     }
@@ -51,7 +52,7 @@ class HajjController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateHajjRequest $request, Hajj $hajj)
+    public function update(UpdateUmrahRequest $request, Umrah $umrah)
     {
         //
     }
@@ -59,7 +60,7 @@ class HajjController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Hajj $hajj)
+    public function destroy(Umrah $umrah)
     {
         //
     }

@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
+use App\Http\Controllers\Controller;
 
-use App\Models\Tour;
-use App\Http\Requests\StoreTourRequest;
-use App\Http\Requests\UpdateTourRequest;
+use App\Models\News;
+use App\Http\Requests\StoreNewsRequest;
+use App\Http\Requests\UpdateNewsRequest;
 
-class TourController extends Controller
+class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('frontend.pages.tour');
+        //
     }
 
     /**
@@ -27,7 +28,7 @@ class TourController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreTourRequest $request)
+    public function store(StoreNewsRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class TourController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Tour $tour)
+    public function show(News $news)
     {
         //
     }
@@ -43,7 +44,7 @@ class TourController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Tour $tour)
+    public function edit(News $news)
     {
         //
     }
@@ -51,7 +52,7 @@ class TourController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTourRequest $request, Tour $tour)
+    public function update(UpdateNewsRequest $request, News $news)
     {
         //
     }
@@ -59,7 +60,7 @@ class TourController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Tour $tour)
+    public function destroy(News $news)
     {
         //
     }

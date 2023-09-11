@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
 
-use App\Models\Testimonial;
-use App\Http\Requests\StoreTestimonialRequest;
-use App\Http\Requests\UpdateTestimonialRequest;
+use App\Http\Controllers\Controller;
 
-class TestimonialController extends Controller
+use App\Models\Category;
+use App\Http\Requests\StoreCategoryRequest;
+use App\Http\Requests\UpdateCategoryRequest;
+
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +29,7 @@ class TestimonialController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreTestimonialRequest $request)
+    public function store(StoreCategoryRequest $request)
     {
         //
     }
@@ -35,7 +37,7 @@ class TestimonialController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Testimonial $testimonial)
+    public function show(Category $category)
     {
         //
     }
@@ -43,7 +45,7 @@ class TestimonialController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Testimonial $testimonial)
+    public function edit(Category $category)
     {
         //
     }
@@ -51,7 +53,7 @@ class TestimonialController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTestimonialRequest $request, Testimonial $testimonial)
+    public function update(UpdateCategoryRequest $request, Category $category)
     {
         //
     }
@@ -59,7 +61,7 @@ class TestimonialController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy(Category $category)
     {
         //
     }
