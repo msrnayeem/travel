@@ -49,6 +49,9 @@
                   <li class="{{ request()->routeIs('tours.index') ? 'active' : '' }}">
                     <a href="{{ route('tours.index') }}">Tour</a>
                   </li>
+                  <li class="{{ request()->routeIs('news.index') ? 'active' : '' }}">
+                    <a href="{{ route('news.index') }}">News</a>
+                  </li>
                   <li class="{{ request()->routeIs('frontend.about') ? 'active' : '' }}">
                     <a href="{{ route('frontend.about') }}">About Us</a>
                   </li>

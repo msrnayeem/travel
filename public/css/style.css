@@ -12490,6 +12490,9 @@ html[class*="ie"] .dtp-hour-hand {
 	display: flex;
 	align-items: center;
 }
+.rd-navbar-aside-center {
+	width: 70%;
+}
 
 .rd-navbar-static .rd-navbar-shop,
 .rd-navbar-fullwidth .rd-navbar-shop {
@@ -13410,6 +13413,10 @@ html[class*="ie"] .dtp-hour-hand {
 	color: #333333;
 	background: #ffffff;
 	transform: translateX(-120%);
+	
+}
+.rd-navbar-nav-wrap {
+	margin-inline: auto;
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap.active {
@@ -14067,6 +14074,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-corporate .rd-navbar-panel {
 	text-align: center;
+	width: 30%;
 }
 
 .rd-navbar-corporate .rd-navbar-fixed .rd-navbar-aside-right {

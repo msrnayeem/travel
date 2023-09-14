@@ -3,7 +3,7 @@
 
     
     @include('frontend.components.head')
-
+    @stack('styles')
     <body>
        <div  style="overflow-x:hidden;">
         @include('frontend.components.preloader')
@@ -19,7 +19,7 @@
 
        
         @include('frontend.components.js')
-         @stack('scripts')
+        @stack('scripts')
     </div>
     </body>
 </html>

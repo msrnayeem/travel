@@ -100,13 +100,15 @@
     <section class="section section-variant-1 bg-default novi-background bg-cover"> 
         <div class="container container-wide">
             <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
-            <div class="col-xl-8">
-                <div class="parallax-text-wrap">
-                <h3>Our Hajj Packages</h3><span class="parallax-text">Best Package</span>
-                </div>
-                <hr class="divider divider-decorate">
-            </div>
-            <div class="col-xl-3 text-xl-right"><a class="button button-secondary button-nina" href="#">view all packages</a></div>
+              <div class="col-xl-8">
+                  <div class="parallax-text-wrap">
+                    <h3>Our Hajj Packages</h3><span class="parallax-text">Best Package</span>
+                  </div>
+                  <hr class="divider divider-decorate">
+              </div>
+              <div class="col-xl-3 text-xl-right">
+                <a class="button button-secondary button-nina" href="#">view all packages</a>
+              </div>
             </div>
             <div class="row row-50">
               <div class="col-md-12">

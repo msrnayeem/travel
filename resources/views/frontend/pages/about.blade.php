@@ -2,6 +2,10 @@
 
 @section('title', 'Travel World || About')
 
+@push('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/about.css') }}">
+    @endpush
+
 @section('content')
 
     <!-- hi, we are brave-->
