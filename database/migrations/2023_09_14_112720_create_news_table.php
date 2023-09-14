@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('banner_text', 10);
-            $table->string('image_link');
-            $table->string('slug');
+            $table->string('banner_text', 10)->nullable();
+            $table->string('image_link')->nullable();
+            $table->string('slug')->nullable();
             $table->mediumText('description');
 
             $table->boolean('is_active')->default(true);
@@ -24,7 +24,7 @@ return new class extends Migration
             $table->boolean('is_trending')->default(false);
             
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('news_category_id');
 
             $table->timestamps();
     
@@ -34,9 +34,9 @@ return new class extends Migration
             ->onDelete('NO ACTION')
             ->onUpdate('NO ACTION');
 
-            $table->foreign('category_id')
+            $table->foreign('news_category_id')
             ->references('id')
-            ->on('categories')
+            ->on('news_categories')
             ->onDelete('CASCADE')
             ->onUpdate('NO ACTION');
 

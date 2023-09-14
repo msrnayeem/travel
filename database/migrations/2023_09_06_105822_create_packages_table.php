@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
             $table->string('name', 30 );
+            $table->string('image_link');
             $table->text('description');
 
             $table->string('room_type_mecca', 15); 
@@ -24,7 +25,6 @@ return new class extends Migration
             $table->unsignedTinyInteger('day')->default(0);
             $table->decimal('price', 10, 2); 
 
-            $table->integer('total_purchase')->default(0); 
             $table->unsignedBigInteger('category_id');
             $table->timestamps();
 

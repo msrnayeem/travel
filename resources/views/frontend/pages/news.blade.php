@@ -101,7 +101,7 @@
                 </div>
                 <div class="card-body">
                 <span class="tag tag-teal">Technology</span>
-                <h4><a href="{{ route('news-details') }}">Why is the Tesla Cybertruck designed the way it is?</a></h4>
+                <h4><a href="{{ route('news.show', 1) }}">Why is the Tesla Cybertruck designed the way it is?</a></h4>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
                     tenetur distinctio neque?

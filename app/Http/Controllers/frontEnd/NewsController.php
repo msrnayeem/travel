@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\News;
 use App\Http\Requests\StoreNewsRequest;
 use App\Http\Requests\UpdateNewsRequest;
+use App\Models\NewsCategory;
 
 class NewsController extends Controller
 {
@@ -15,11 +16,6 @@ class NewsController extends Controller
     public function index()
     {
         return view('frontend.pages.news');
-    }
-
-    public function newsDetails()
-    {
-        return view('frontend.pages.news-details');
     }
 
     /**
@@ -43,7 +39,15 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        
+        $all_categories = NewsCategory::withCount('news')->get();
+
+        // foreach ($categories as $category) {
+        //     echo "Category: {$category->name}, News Count: {$category->news_count}\n";
+        // }
+
+
+        return view('frontend.pages.news-details', compact('news', 'all_categories'));
     }
 
     /**

@@ -28,8 +28,6 @@ Route::resource('hajjz', HajjController::class);
 Route::resource('umrahs', UmrahController::class);
 Route::resource('news', NewsController::class);
 
-Route::get('/news-details', [NewsController::class, 'newsDetails'])->name('news-details');
-
 //frontend routes
 Route::get('/', [FrontendController::class, 'index'])->name('frontend.index');
 Route::get('/about', [FrontendController::class, 'about'])->name('frontend.about');
