@@ -13,11 +13,11 @@ class News extends Model
     }
 
     public function category(){
-        return $this->belongsTo(NewsCategory::class);
+        return $this->belongsTo(Category::class);
     }
 
     public function newsCategory(){
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(NewsCategory::class);
     }
 
     public function newsImages(){

@@ -19,36 +19,44 @@ class NewsSeeder extends Seeder
         News::create([
             'user_id' => 1,
             'title' => 'Hajj News 1',
+            'category_id' => 1,
             'news_category_id' => 1, //hajj
             'slug' => 'hajj-news-1',
+            'is_featured' => true,
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            'image_link' => 'hajj-news-1.jpg',
+            'image_link' => 'images/landing-private-airlines-7-570x415.jpg',
         ]);
         News::create([
             'user_id' => 1,
             'title' => 'Hajj News 2',
+            'category_id' => 1,
             'news_category_id' => 1, //hajj
             'slug' => 'hajj-news-2',
+            'is_featured' => true,
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            'image_link' => 'hajj-news-2.jpg',
+            'image_link' => 'images/landing-private-airlines-7-570x415.jpg',
         ]);
 
         //umrah news
         News::create([
             'user_id' => 1,
             'title' => 'Umrah News 1',
+            'category_id' => 2, //umrah
             'news_category_id' => 2, //umrah
             'slug' => 'umrah-news-1',
+            'is_featured' => true,
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            'image_link' => 'umrah-news-1.jpg',
+            'image_link' => 'images/landing-private-airlines-7-570x415.jpg',
         ]);
         News::create([
             'user_id' => 1,
             'title' => 'Umrah News 2',
+            'category_id' => 2, //umrah
             'news_category_id' => 2, //umrah
             'slug' => 'umrah-news-2',
+            'is_featured' => true,
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-            'image_link' => 'umrah-news-2.jpg',
+            'image_link' => 'images/landing-private-airlines-7-570x415.jpg',
         ]);
     }
 }

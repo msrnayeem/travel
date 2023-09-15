@@ -23,22 +23,11 @@ return new class extends Migration
             $table->boolean('is_featured')->default(false);
             $table->boolean('is_trending')->default(false);
             
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('news_category_id');
+            $table->foreignId("user_id")->constrained()->onDelete('CASCADE');
+            $table->foreignId("news_category_id")->constrained()->onDelete('CASCADE');
+            $table->foreignId("category_id")->constrained()->onDelete('CASCADE');
 
             $table->timestamps();
-    
-            $table->foreign('user_id')
-            ->references('id')
-            ->on('users')
-            ->onDelete('NO ACTION')
-            ->onUpdate('NO ACTION');
-
-            $table->foreign('news_category_id')
-            ->references('id')
-            ->on('news_categories')
-            ->onDelete('CASCADE')
-            ->onUpdate('NO ACTION');
 
         });
     }

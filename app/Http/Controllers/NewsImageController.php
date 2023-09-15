@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontEnd;
+use App\Http\Controllers\Controller;
 
 use App\Models\NewsImage;
 use App\Http\Requests\StoreNewsImageRequest;

@@ -6491,9 +6491,9 @@ textarea.form-input.form-input-lg {
 		min-height: 640px;
 	}
 
-	.post-blog-caption-body {
+	/* .post-blog-caption-body {
 		min-height: 200px;
-	}
+	} */
 }
 
 .post-blog-meta {
