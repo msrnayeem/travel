@@ -14,7 +14,7 @@
               <article class="box-simple">
                 <div class="box-simple-icon novi-icon mdi mdi-map-marker"></div>
                 <h6>Address</h6>
-                <div class="box-simple-text"><a href="#">TravelWorld Ltd<br> Dhaka,Bangladesh</a></div>
+                <div class="box-simple-text"><a href="{{ route('frontend.index') }}">TravelWorld Ltd<br> Dhaka,Bangladesh</a></div>
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
@@ -106,6 +106,11 @@
                   </form>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="section-wrap-aside  ">
+            <div class="google-map-container google-map-with-icon rd-google-map__model d-flex justify-content-center align-items-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.876781726429!2d90.41230416095885!3d23.803005198491032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1694750905982!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
             

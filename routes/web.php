@@ -18,11 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-
-
 Route::resource('tours', TourController::class);
 Route::resource('hajjz', HajjController::class);
 Route::resource('umrahs', UmrahController::class);
