@@ -13241,7 +13241,7 @@ html[class*="ie"] .dtp-hour-hand {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+	
 	background: #ffffff;
 }
 
@@ -14071,7 +14071,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-corporate .rd-navbar-panel {
 	text-align: center;
-	width: 30%;
+	
 }
 
 .rd-navbar-corporate .rd-navbar-fixed .rd-navbar-aside-right {
