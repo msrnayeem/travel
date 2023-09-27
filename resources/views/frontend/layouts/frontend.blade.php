@@ -2,10 +2,11 @@
 <html class="wide wow-animation" lang="en">
 
 
-    @include('frontend.components.head')
-    @stack('styles')
-    <body>
-       <div  style="overflow-x:hidden;">
+@include('frontend.components.head')
+@stack('styles')
+
+<body>
+    <div style=" position: relative;">
         {{-- @include('frontend.components.preloader') --}}
 
 
@@ -21,9 +22,6 @@
         @include('frontend.components.js')
         @stack('scripts')
     </div>
-    </body>
+</body>
+
 </html>
-
-
-
-

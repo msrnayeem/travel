@@ -1,0 +1,135 @@
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .rb-box {
+            width: 80%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 1.3em;
+            background: #f0f0f0;
+            color: black;
+            font-weight: 700;
+            border-radius: .75em;
+            -webkit-filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, .3));
+            filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, .3));
+            box-shadow:
+                0 2px 2px rgba(243, 49, 128, .5),
+                0 0px 5px rgba(243, 49, 128, .15),
+                0 0px 4px rgba(0, 0, 0, .35),
+                0 5px 20px rgba(243, 49, 128, .25),
+                0 15px 50px rgba(243, 49, 128, .75),
+                inset 0 0 15px rgba(255, 255, 255, .05);
+        }
+
+        .box {
+            display: inline-block;
+            height: 50px;
+            border-radius: 10%;
+            padding: 8px 8px;
+            border: solid 2px #ccc;
+            transition: all 0.3s;
+            margin-left: 30px;
+        }
+
+        .circle {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            padding: 12px;
+            border: solid 2px #ccc;
+            transition: all 0.3s;
+            margin-left: 30px;
+        }
+
+        .boxed input[type="radio"] {
+            display: none;
+
+        }
+
+        .boxed input[type="radio"]:checked+label {
+            border: solid 2px green;
+            background-color: ivory;
+        }
+<div class="container mt-2 mb-4">
+         <div class="row">
+            <div class="col-md-8">
+                <form class="boxed">
+                    <div class="p-2 mb-1">
+                        <h5>Select your category</h5>
+                        <div class="ml-4 mt-2">
+                            <input type="radio" id="hajj" name="category" value="hajj">
+                            <label class="box" for="hajj">Hajj</label <input type="radio" id="umrah"
+                                name="category" value="umrah">
+                            <label class="box" for="umrah">Umra</label>
+
+                            <input type="radio" id="tour" name="category" value="tour">
+                            <label class="box" for="tour">Tour</label>
+                        </div>
+                    </div>
+                    <div class="p-2 mb-1">
+                        <h5>who is going to process passport?</h5>
+                        <div class="ml-4 mt-2">
+                            <input type="radio" id="self" name="passport" value="self">
+                            <label class="box" for="self">Self</label>
+
+                            <input type="radio" id="agency" name="passport" value="agency">
+                            <label class="box" for="agency">agency</label>
+                        </div>
+                    </div>
+                    <div class="p-2 mb-1">
+                        <h5>who is going to proess visa?</h5>
+                        <div class="ml-4 mt-2">
+                            <input type="radio" id="visa_self" name="visa" value="self">
+                            <label class="box" for="visa_self">Self</label>
+
+                            <input type="radio" id="visa_agency" name="visa" value="agency">
+                            <label class="box" for="visa_agency">agency</label>
+                        </div>
+                    </div>
+
+                    <div class="p-2 mb-1">
+                        <h5>For how many days?</h5>
+                        <div class="ml-4 mt-2">
+                            <input type="radio" id="three" name="time" value="3">
+                            <label class="circle" for="three">03</label>
+
+                            <input type="radio" id="seven" name="time" value="7">
+                            <label class="circle" for="seven">07</label>
+
+                            <input type="radio" id="fourteen" name="time" value="14">
+                            <label class="circle" for="fourteen">14</label>
+
+                            <input type="radio" id="thirty" name="time" value="30">
+                            <label class="circle" for="thirty">30</label>
+
+                        </div>
+                    </div>
+
+                    <div class="p-2 mb-1">
+                        <h5>Hotel Category?</h5>
+                        <div class="ml-4 mt-2">
+                            <input type="radio" id="three_star" name="hotel" value="3">
+                            <label class="box" for="three_star">3 Star</label>
+
+                            <input type="radio" id="four_star" name="hotel" value="7">
+                            <label class="box" for="four_star">4 Star</label>
+
+                            <input type="radio" id="five_star" name="hotel" value="7">
+                            <label class="box" for="five_star">5 Star</label>
+
+                        </div>
+                    </div>
+
+                    <div class="button-box">
+                        <button class="button trigger">Submit!</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 bg-success">
+                ok
+            </div>
+        </div>
+
+    </div>
