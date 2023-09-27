@@ -276,32 +276,41 @@
 
         <div class="right sticky">
             <div class="col-12 col-lg-4">
-                <div class="row d-flex align-items-center">
-
-                    <h5> Type- <span id="type">Tour</span> </h5>
-
-                </div>
-                <div class="row d-flex align-items-center">
-
-                    <h5> Time- <span id="type">Tour</span> </h5>
-
-                </div>
-                <div class="row d-flex align-items-center">
-
-                    <h5> Passport- <span id="type">Tour</span> </h5>
-
-                </div>
-                <div class="row d-flex align-items-center">
-
-                    <h5> Visa- <span id="type">Tour</span> </h5>
-
-                </div>
-                
-                <div class="row d-flex align-items-center">
-                    <div class="col">
-                        <button class="btn sbmt" type="submit">Book Now</button>
-                    </div>
-                </div>
+                <table class="table">
+                    <tr>
+                        <th>Type:</th>
+                        <td><span id="type">Tour</span></td>
+                    </tr>
+                    <tr>
+                        <th>Time:</th>
+                        <td><span id="time">7 Days</span></td>
+                    </tr>
+                    <tr>
+                        <th>Passport:</th>
+                        <td><span id="passport">Agency</span></td>
+                    </tr>
+                    <tr>
+                        <th>Visa:</th>
+                        <td><span id="visa">Agency</span></td>
+                    </tr>
+                    <tr>
+                        <th>Hotel:</th>
+                        <td><span id="hotel">3 Star</span></td>
+                    </tr>
+                    <tr>
+                        <th>Meal:</th>
+                        <td><span id="meal">Breakfust, lunch, dinner</span></td>
+                    </tr>
+                    <tr>
+                        <th>Total Cost:</th>
+                        <td><span id="meal">$10000</span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn sbmt" type="submit">Book Now</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
