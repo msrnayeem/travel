@@ -37,15 +37,10 @@ class NewsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(News $news)
+    public function show($id)
     {
-        
+        $news = News::with('category')->findOrFail($id);
         $all_categories = NewsCategory::withCount('news')->get();
-
-        // foreach ($categories as $category) {
-        //     echo "Category: {$category->name}, News Count: {$category->news_count}\n";
-        // }
-
 
         return view('frontend.pages.news-details', compact('news', 'all_categories'));
     }

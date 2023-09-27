@@ -11,9 +11,9 @@ class FrontendController extends Controller
     public function index()
     {
         $featuredNews = News::where('is_featured', 1)->take(4)->get();
-       
+
         $newsCount = $featuredNews->count();
-        
+
         return view('frontend.pages.index', compact('featuredNews', 'newsCount'));
     }
 
@@ -25,5 +25,15 @@ class FrontendController extends Controller
     public function contact()
     {
         return view('frontend.pages.contact');
+    }
+
+    public function typography()
+    {
+        return view('frontend.pages.typography');
+    }
+
+    public function createPackage()
+    {
+        return view('frontend.pages.create-package');
     }
 }
