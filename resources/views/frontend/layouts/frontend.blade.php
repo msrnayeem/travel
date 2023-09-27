@@ -7,11 +7,9 @@
 
 <body>
     <div style=" position: relative;">
-        {{-- @include('frontend.components.preloader') --}}
-
+        @include('frontend.components.preloader')
 
         @include('frontend.components.header')
-
 
         @yield('content')
 

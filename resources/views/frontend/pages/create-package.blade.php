@@ -1,97 +1,11 @@
 @extends('frontend.layouts.frontend')
 
 @section('title', 'Travel World || Create Package')
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/create-package.css') }}">
+@endpush
 
 @section('content')
-
-
-    <style>
-        .row+.row {
-            margin-top: 0;
-        }
-
-        .parent {
-            display: flex;
-            position: relative;
-            gap: 1.5rem;
-            align-items: center;
-            justify-content: center;
-            cursor: default;
-        }
-
-        .left {
-
-            padding: 1rem;
-            height: max-content;
-        }
-
-        @media (max-width: 40rem) {
-            .parent {
-                top: 70px;
-                flex-direction: column;
-            }
-
-            .sticky {
-                margin-bottom: 70px;
-            }
-        }
-
-        .right {
-
-            padding: 1rem;
-        }
-
-        .sticky {
-            position: sticky;
-            height: max-content;
-            top: 0;
-        }
-
-        .circle {
-            display: inline-block;
-            height: 56px;
-            width: 56px;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 11px;
-            line-height: 56px;
-            font-weight: 700;
-            border: solid 2px #ccc;
-            transition: all 0.3s;
-            color: black;
-
-        }
-
-        input[type="radio"],
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        input[type="radio"]:hover+label,
-        input[type="checkbox"]:hover+label {
-            background-color: #ffa900;
-            cursor: pointer;
-        }
-
-        input[type="radio"]:checked+label,
-        input[type="checkbox"]:checked+label {
-            background-color: #ffa900;
-            cursor: pointer;
-        }
-
-        .sbmt {
-            background-color: #ffa900;
-            color: rgb(0, 0, 0);
-            cursor: pointer;
-        }
-
-        .sbmt:hover {
-            background-color: #d251cc;
-            color: rgb(0, 0, 0);
-        }
-    </style>
-
-
     <div class="parent">
         <div class="left">
             <div class="mb-0 ml-4">
@@ -161,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex align-items-center mb-3">
                     <div class="col-md-5 col-sm-12 m-0">
                         <div>
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Passport processing by-</h3>
@@ -299,10 +213,10 @@
                     </tr>
                     <tr>
                         <th>Meal:</th>
-                        <td><span id="meal">Breakfust, lunch, dinner</span></td>
+                        <td><span id="meal">lunch, dinner</span></td>
                     </tr>
                     <tr>
-                        <th>Total Cost:</th>
+                        <th>Total:</th>
                         <td><span id="meal">$10000</span></td>
                     </tr>
                     <tr>

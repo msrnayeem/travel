@@ -1,0 +1,83 @@
+.row+.row {
+    margin-top: 0;
+}
+
+.parent {
+    display: flex;
+    position: relative;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.left {
+
+    padding: 1rem;
+    height: max-content;
+}
+
+@media (max-width: 40rem) {
+    .parent {
+        top: 70px;
+        flex-direction: column;
+    }
+
+    .sticky {
+        margin-bottom: 70px;
+    }
+}
+
+.right {
+
+    padding: 1rem;
+}
+
+.sticky {
+    position: sticky;
+    height: max-content;
+    top: 0;
+}
+
+.circle {
+    display: inline-block;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    line-height: 56px;
+    font-weight: 700;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+    color: black;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="radio"]:hover+label,
+input[type="checkbox"]:hover+label {
+    background-color: #ffa900;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    background-color: #ffa900;
+    cursor: pointer;
+}
+
+.sbmt {
+    background-color: #ffa900;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.sbmt:hover {
+    background-color: #d251cc;
+    color: rgb(0, 0, 0);
+}
