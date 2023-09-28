@@ -16,7 +16,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Planning for ?</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p class="text-capitalize selectedCategory">Hajj</p>
+                            <p class="text-capitalize category">Hajj</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -28,7 +28,7 @@
 
                             <div class="mr-2">
                                 <input type="radio" id="umrah" name="category" value="umrah">
-                                <label class="circle" for="umrah">Umra</label>
+                                <label class="circle" for="umrah">Umrah</label>
                             </div>
 
                             <div class="mr-2">
@@ -46,7 +46,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Time period-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p class="text-capitalize selectedDays">07 days</p>
+                            <p><span class="time">07</span> Days</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -81,7 +81,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Passport processing by-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p class="text-capitalize selectedForPassport">Ajency</p>
+                            <p class="text-capitalize passport">Ajency</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -107,7 +107,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Visa processing by-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p class="text-capitalize selectedForVisa">Ajency</p>
+                            <p class="text-capitalize visa">Ajency</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -132,14 +132,14 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Hotel category-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p class="text-capitalize selectedHotel">3-Star</p>
+                            <p class="text-capitalize hotel">3-Star</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
                         <div class="p-3 d-flex">
                             <div class="mr-2">
-                                <input type="radio" id="hotel_0" name="hotel" value="Non-Star">
-                                <label class="circle" for="hotel_0">Non-Star</label>
+                                <input type="radio" id="hotel_0" name="hotel" value="Regular">
+                                <label class="circle" for="hotel_0">Regular</label>
                             </div>
 
                             <div class="mr-2">
@@ -162,7 +162,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Food-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p class="text-capitalize selectedMeal">Dinner</p>
+                            <p class="text-capitalize food">Dinner</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -193,31 +193,31 @@
                 <table class="table">
                     <tr>
                         <th>Type:</th>
-                        <td><span class="text-capitalize selectedCategory">Hajj</span></td>
+                        <td><span class="text-capitalize category">Hajj</span></td>
                     </tr>
                     <tr>
                         <th>Time:</th>
-                        <td><span id="time">7 Days</span></td>
+                        <td><span style="font-size: 15px;"><span class="time">07</span> Days</span></td>
                     </tr>
                     <tr>
                         <th>Passport:</th>
-                        <td><span id="passport">Agency</span></td>
+                        <td><span class="text-capitalize passport">Agency</span></td>
                     </tr>
                     <tr>
                         <th>Visa:</th>
-                        <td><span id="visa">Agency</span></td>
+                        <td><span class="text-capitalize visa">Agency</span></td>
                     </tr>
                     <tr>
                         <th>Hotel:</th>
-                        <td><span id="hotel">3 Star</span></td>
+                        <td><span class="text-capitalize hotel">3 Star</span></td>
                     </tr>
                     <tr>
                         <th>Meal:</th>
-                        <td><span id="meal">lunch, dinner</span></td>
+                        <td><span class="food">lunch, dinner</span></td>
                     </tr>
                     <tr>
                         <th>Total:</th>
-                        <td><span id="meal">$10000</span></td>
+                        <td><span id="cost">$10000</span></td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -232,11 +232,10 @@
 
     <script>
         $(document).ready(function() {
-            // Attach a change event listener to the radio buttons
-            $('input[name="category"]').change(function() {
+            $('input[type="radio"]').change(function() {
 
-                var selectedValue = $('input[name="category"]:checked').val();
-                var $selectedCategory = $('.selectedCategory');
+                var name = $(this).attr('name');
+                var selectedValue = $(this).val();
 
                 var characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
                 var animationInterval = setInterval(function() {
@@ -245,13 +244,53 @@
                         shuffledText += characters.charAt(Math.floor(Math.random() * characters
                             .length));
                     }
-                    $selectedCategory.text(shuffledText);
+                    $('.' + name).text(shuffledText);
                 }, 50);
 
                 setTimeout(function() {
                     clearInterval(animationInterval);
-                    $selectedCategory.text(selectedValue);
+                    $('.' + name).text(selectedValue);
                 }, 500);
+            });
+        });
+        $(document).ready(function() {
+            // Function to shuffle a string
+            function shuffleString(str) {
+                var array = str.split('');
+                for (var i = array.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+                // Limit the shuffled text to 20 characters
+                return array.slice(0, 10).join('');
+            }
+
+            // Attach an onchange event handler to the checkboxes
+            $('input[type="checkbox"]').change(function() {
+                // Get the name of the checkbox group
+                var groupName = $(this).attr('name');
+
+                // Get all checked values within the same group
+                var checkedValues = $('input[name="' + groupName + '"]:checked').map(function() {
+                    return $(this).val();
+                }).get();
+
+                // Update the corresponding <p> element with the checked values with shuffle animation
+                var $pElement = $('.' + groupName);
+                var originalText = $pElement.text();
+                var shuffledText = shuffleString(originalText);
+
+                // Apply shuffle animation
+                var interval = setInterval(function() {
+                    $pElement.text(shuffleString($pElement.text()));
+                }, 50); // Adjust the interval as needed for the desired speed
+
+                setTimeout(function() {
+                    clearInterval(interval);
+                    $pElement.text(checkedValues.join(', '));
+                }, 500); // Adjust the duration of the shuffle animation as needed (500ms in this example)
             });
         });
     </script>
