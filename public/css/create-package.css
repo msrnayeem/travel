@@ -1,45 +1,53 @@
+.main-div {
+    overflow-x: unset;
+    position: relative;
+}
+
 .row+.row {
     margin-top: 0;
 }
 
-.parent {
+.parentt {
     display: flex;
     position: relative;
     gap: 1.5rem;
-    align-items: center;
     justify-content: center;
     cursor: default;
 }
 
-.left {
-
+.leftt {
     padding: 1rem;
     height: max-content;
 }
 
 @media (max-width: 40rem) {
-    .parent {
-        top: 70px;
+    .parentt {
+        top: 60px;
         flex-direction: column;
     }
 
-    .sticky {
-        margin-bottom: 70px;
+    .stickyy {
+        margin-bottom: 90px;
+        top: 0px !important;
     }
 }
 
-.right {
+@media (min-width: 40rem) {
+    .stickyy {
+        position: sticky;
+        height: max-content;
+        top: 70px;
+    }
+}
+
+.rightt {
 
     padding: 1rem;
 }
 
-.sticky {
-    position: sticky;
-    height: max-content;
-    top: 0;
-}
 
-.circle {
+
+.circlee {
     display: inline-block;
     height: 56px;
     width: 56px;

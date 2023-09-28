@@ -65,7 +65,7 @@
                                 <a href="{{ route('frontend.index') }}">Home</a>
                             </li>
                             <li class="{{ request()->routeIs('create.package') ? 'active' : '' }}">
-                                <a href="{{ route('create.package') }}">Build Package</a>
+                                <a href="{{ route('create.package') }}">Plan Yourself</a>
                             </li>
                             <li class="{{ request()->routeIs('umrah.index') ? 'active' : '' }}">
                                 <a href="{{ route('umrah.index') }}">Umrah</a>
@@ -93,4 +93,3 @@
         </nav>
     </div>
 </header>
-

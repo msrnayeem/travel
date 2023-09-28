@@ -6,7 +6,7 @@
 @stack('styles')
 
 <body>
-    <div style=" position: relative;">
+    <div class="main-div">
         @include('frontend.components.preloader')
 
         @include('frontend.components.header')

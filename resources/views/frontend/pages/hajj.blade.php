@@ -25,8 +25,7 @@
                                                 your favorite resort, you will surely have the best
                                                 experience.
                                             </p>
-                                            <a class="button button-default-outline button-nina button-sm"
-                                                href="#">learn more</a>
+
                                         </div>
                                     </div>
                                 </div>
@@ -46,8 +45,7 @@
                                             very popular countries and cities like Paris, Rio de
                                             Janeiro, Cairo and a lot of others.
                                         </p>
-                                        <a class="button button-default-outline button-nina button-sm" href="#">learn
-                                            more</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +253,7 @@
 
                                 </ul>
                                 <div class="card-body d-flex justify-content-center">
-                                    <a href="#" class="button button-sm button-secondary">Book Now</a>
+                                    <a href="#" class="btn sbmt">Book Now</a>
                                 </div>
                             </div>
                             <!-- card end -->
@@ -397,7 +395,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-12"><a class="button button-secondary button-nina button-offset-lg" href="#">view
+                <div class="col-12"><a class="btn sbmt" href="#">view
                         all blog posts</a></div>
             </div>
         </div>
@@ -474,7 +472,7 @@
                             <h3 class="box-cta-title">Buy a tour without leaving your home</h3>
                             <p>Using our website, you can book any tour just in a couple of clicks.</p>
                         </div>
-                        <div class="box-cta-inner"><a class="button button-secondary button-nina" href="#">Book
+                        <div class="box-cta-inner"><a class="btn sbmt" href="#">Book
                                 Now</a></div>
                     </div>
                 </div>
