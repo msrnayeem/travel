@@ -16,7 +16,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Planning for ?</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p>Hajj</p>
+                            <p class="text-capitalize selectedCategory">Hajj</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -46,7 +46,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Time period-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p>07 days</p>
+                            <p class="text-capitalize selectedDays">07 days</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -81,7 +81,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Passport processing by-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p>Ajency</p>
+                            <p class="text-capitalize selectedForPassport">Ajency</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -107,7 +107,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Visa processing by-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p>Ajency</p>
+                            <p class="text-capitalize selectedForVisa">Ajency</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -132,7 +132,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Hotel category-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p>3-Star</p>
+                            <p class="text-capitalize selectedHotel">3-Star</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -162,7 +162,7 @@
                             <h3 style="font-size:22px; font-weight:500; font-color:black;">Food-</h3>
                         </div>
                         <div class="d-none d-sm-block">
-                            <p>Dinner</p>
+                            <p class="text-capitalize selectedMeal">Dinner</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 m-0">
@@ -193,7 +193,7 @@
                 <table class="table">
                     <tr>
                         <th>Type:</th>
-                        <td><span id="type">Tour</span></td>
+                        <td><span class="text-capitalize selectedCategory">Hajj</span></td>
                     </tr>
                     <tr>
                         <th>Time:</th>
@@ -228,5 +228,37 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Attach a change event listener to the radio buttons
+            $('input[name="category"]').change(function() {
+
+                var selectedValue = $('input[name="category"]:checked').val();
+                var $selectedCategory = $('.selectedCategory');
+
+                var characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                var animationInterval = setInterval(function() {
+                    var shuffledText = '';
+                    for (var i = 0; i < selectedValue.length; i++) {
+                        shuffledText += characters.charAt(Math.floor(Math.random() * characters
+                            .length));
+                    }
+                    $selectedCategory.text(shuffledText);
+                }, 50);
+
+                setTimeout(function() {
+                    clearInterval(animationInterval);
+                    $selectedCategory.text(selectedValue);
+                }, 500);
+            });
+        });
+    </script>
+
+
+
+
+
 
 @endsection
