@@ -25,8 +25,6 @@
                                                 your favorite resort, you will surely have the best
                                                 experience.
                                             </p>
-
-                                            >
                                         </div>
                                     </div>
                                 </div>

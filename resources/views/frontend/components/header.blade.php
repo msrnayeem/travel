@@ -7,7 +7,9 @@
             data-xl-device-layout="rd-navbar-static" data-md-stick-up-offset="130px" data-lg-stick-up-offset="100px"
             data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true"
             data-xl-stick-up="true">
-            <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse">
+                <span></span>
+            </div>
             <div class="rd-navbar-top-panel rd-navbar-collapse novi-background">
                 <div class="rd-navbar-top-panel-inner">
                     <ul class="list-inline">
@@ -26,35 +28,37 @@
                                 href="mailto:#">mail@travelworld.org</a></li>
                     </ul>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a
-                                class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a>
+                        <li class="list-inline-item">
+                            <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-facebook" href="#"></a>
                         </li>
-                        <li class="list-inline-item"><a
-                                class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-twitter" href="#"></a>
+                        <li class="list-inline-item">
+                            <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-twitter" href="#"></a>
                         </li>
-                        <li class="list-inline-item"><a
-                                class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="#"></a>
+                        <li class="list-inline-item">
+                            <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="#"></a>
                         </li>
-                        <li class="list-inline-item"><a
-                                class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-google-plus"
-                                href="#"></a></li>
-                        <li class="list-inline-item"><a
-                                class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="#"></a>
+                        <li class="list-inline-item">
+                            <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-google-plus" href="#"></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="icon novi-icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="#"></a>
                         </li>
                     </ul>
                 </div>
-                <div class="rd-navbar-top-panel-inner"><a class="button button-sm button-secondary button-nina"
-                        href="" target="_blank">Book now</a></div>
+
             </div>
             <div class="rd-navbar-inner">
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel">
                     <!-- RD Navbar Toggle-->
-                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                        <span></span>
+                    </button>
                     <!-- RD Navbar Brand-->
                     <div class="rd-navbar-brand">
                         <a class="brand-name" href="{{ route('frontend.index') }}"><img class="logo-default"
-                                src="{{ asset('images/logo/header_logo.png') }}" /></a>
+                                src="{{ asset('images/logo/header_logo.png') }}" alt="" width="208"
+                                height="46" /></a>
                     </div>
                 </div>
                 <div class="rd-navbar-aside-center">
@@ -80,7 +84,7 @@
                                 <a href="{{ route('news.index') }}">News</a>
                             </li>
                             <li class="{{ request()->routeIs('frontend.about') ? 'active' : '' }}">
-                                <a href="{{ route('frontend.about') }}">About Us</a>
+                                <a href="{{ route('frontend.about') }}">About</a>
                             </li>
                             <li class="{{ request()->routeIs('frontend.contact') ? 'active' : '' }}">
                                 <a href="{{ route('frontend.contact') }}">Contacts</a>

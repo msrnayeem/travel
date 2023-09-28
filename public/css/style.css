@@ -11043,7 +11043,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .dtp-actual-meridien a.selected {
-    background: #2c20c0;
+    background: #e99e06;
     color: #ffffff;
 }
 
@@ -11065,7 +11065,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .dtp-picker-time>a.dtp-select-hour.selected {
-    background: #2c20c0;
+    background: #e99e06;
     color: #ffffff;
 }
 
@@ -11078,7 +11078,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .dtp-picker-time>a.dtp-select-minute.selected {
-    background: #2c20c0;
+    background: #e99e06;
     color: #ffffff;
 }
 
@@ -11635,6 +11635,7 @@ html[class*="ie"] .dtp-hour-hand {
     display: none;
 }
 
+
 /*
 *
 * RD Navbar
@@ -11883,15 +11884,20 @@ html[class*="ie"] .dtp-hour-hand {
     display: inline-block;
 }
 
-
-
-.rd-navbar-dropdown {
+.rd-navbar-brand .logo-inverse {
     display: none;
 }
 
-.logo-default {
-    width: 40%;
-    height: auto;
+.breadcrumbs-custom-light .rd-navbar-brand .logo-inverse {
+    display: inline-block;
+}
+
+.breadcrumbs-custom-light .rd-navbar-brand .logo-default {
+    display: none;
+}
+
+.rd-navbar-dropdown {
+    display: none;
 }
 
 .rd-navbar-dropdown li+li,
@@ -11937,7 +11943,8 @@ html[class*="ie"] .dtp-hour-hand {
     font: 300 18px/1.2 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-@media (min-width: 992px) {
+/* nayeem */
+@media (min-width: 900px) {
     .desktop .rd-navbar-wrap+.breadcrumbs-custom {
         padding-top: 200px;
         padding-bottom: 70px;
@@ -12488,10 +12495,6 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-fullwidth .rd-navbar-aside-center {
     display: flex;
     align-items: center;
-}
-
-.rd-navbar-aside-center {
-    width: 70%;
 }
 
 .rd-navbar-static .rd-navbar-shop,
@@ -13221,7 +13224,6 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-fixed .rd-navbar-brand img {
     max-width: 143px;
     height: auto;
-    margin-left: -50px;
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
@@ -13244,7 +13246,7 @@ html[class*="ie"] .dtp-hour-hand {
     top: 0;
     bottom: 0;
     right: 0;
-
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
     background: #ffffff;
 }
 
@@ -13413,11 +13415,6 @@ html[class*="ie"] .dtp-hour-hand {
     color: #333333;
     background: #ffffff;
     transform: translateX(-120%);
-
-}
-
-.rd-navbar-nav-wrap {
-    margin-inline: auto;
 }
 
 .rd-navbar-fixed .rd-navbar-nav-wrap.active {
@@ -13451,7 +13448,7 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-fixed .rd-navbar-nav li:hover>a,
 .rd-navbar-fixed .rd-navbar-nav li.active>a,
 .rd-navbar-fixed .rd-navbar-nav li.opened>a {
-    background-color: #ffa900;
+    background: #e99e06;
     color: #ffffff;
 }
 
@@ -13717,7 +13714,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-sidebar .rd-navbar-sidebar-inner .rd-navbar-nav li:hover>a,
 .rd-navbar-sidebar .rd-navbar-sidebar-inner .rd-navbar-nav li.active>a,
 .rd-navbar-sidebar .rd-navbar-sidebar-inner .rd-navbar-nav li.opened>a {
-    background: #2c20c0;
+    background: #e99e06;
     color: #ffffff;
 }
 
@@ -14075,7 +14072,6 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-corporate .rd-navbar-panel {
     text-align: center;
-
 }
 
 .rd-navbar-corporate .rd-navbar-fixed .rd-navbar-aside-right {
@@ -14112,6 +14108,14 @@ html.rd-navbar-fixed-linked .page {
     display: none;
 }
 
+/* Styles for screens with a width between 900px and 1200px */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .rd-navbar-aside-center {
+        justify-content: center;
+    }
+}
+
+
 .rd-navbar-corporate .rd-navbar-fullwidth.rd-navbar--is-stuck .rd-navbar-aside-right,
 .rd-navbar-corporate .rd-navbar-fullwidth.rd-navbar--is-stuck .rd-navbar-aside-center,
 .rd-navbar-corporate .rd-navbar-static.rd-navbar--is-stuck .rd-navbar-aside-right,
@@ -14121,6 +14125,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-corporate .rd-navbar-fullwidth .rd-navbar-inner {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .rd-navbar-corporate .rd-navbar-fullwidth .rd-navbar-dropdown {
@@ -14443,6 +14448,8 @@ ol ul,
 ol ol {
     padding-left: 0;
 }
+
+
 
 /*
 *
