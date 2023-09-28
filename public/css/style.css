@@ -13451,7 +13451,7 @@ html[class*="ie"] .dtp-hour-hand {
 .rd-navbar-fixed .rd-navbar-nav li:hover>a,
 .rd-navbar-fixed .rd-navbar-nav li.active>a,
 .rd-navbar-fixed .rd-navbar-nav li.opened>a {
-    background: #2c20c0;
+    background-color: #ffa900;
     color: #ffffff;
 }
 
