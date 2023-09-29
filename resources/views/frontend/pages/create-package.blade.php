@@ -1,6 +1,6 @@
 @extends('frontend.layouts.frontend')
 
-@section('title', 'Travel World || Create Package')
+@section('title', 'Travel World || Plan Yourself')
 @push('styles')
     <link rel="stylesheet" href="{{ asset('css/create-package.css') }}">
 @endpush
@@ -112,7 +112,7 @@
                     <div class="col-md-6 col-sm-12 m-0">
                         <div class="p-3 d-flex">
                             <div class="mr-2">
-                                <input type="radio" id="visa_self" name="visa" value="selt">
+                                <input type="radio" id="visa_self" name="visa" value="self ">
                                 <label class="circlee" for="visa_self">Self</label>
                             </div>
 
@@ -228,75 +228,5 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('input[type="radio"]').change(function() {
-
-                var name = $(this).attr('name');
-                var selectedValue = $(this).val();
-
-                var characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-                var animationInterval = setInterval(function() {
-                    var shuffledText = '';
-                    for (var i = 0; i < selectedValue.length; i++) {
-                        shuffledText += characters.charAt(Math.floor(Math.random() * characters
-                            .length));
-                    }
-                    $('.' + name).text(shuffledText);
-                }, 50);
-
-                setTimeout(function() {
-                    clearInterval(animationInterval);
-                    $('.' + name).text(selectedValue);
-                }, 500);
-            });
-        });
-        $(document).ready(function() {
-            // Function to shuffle a string
-            function shuffleString(str) {
-                var array = str.split('');
-                for (var i = array.length - 1; i > 0; i--) {
-                    var j = Math.floor(Math.random() * (i + 1));
-                    var temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                }
-                // Limit the shuffled text to 20 characters
-                return array.slice(0, 10).join('');
-            }
-
-            // Attach an onchange event handler to the checkboxes
-            $('input[type="checkbox"]').change(function() {
-                // Get the name of the checkbox group
-                var groupName = $(this).attr('name');
-
-                // Get all checked values within the same group
-                var checkedValues = $('input[name="' + groupName + '"]:checked').map(function() {
-                    return $(this).val();
-                }).get();
-
-                // Update the corresponding <p> element with the checked values with shuffle animation
-                var $pElement = $('.' + groupName);
-                var originalText = $pElement.text();
-                var shuffledText = shuffleString(originalText);
-
-                // Apply shuffle animation
-                var interval = setInterval(function() {
-                    $pElement.text(shuffleString($pElement.text()));
-                }, 50); // Adjust the interval as needed for the desired speed
-
-                setTimeout(function() {
-                    clearInterval(interval);
-                    $pElement.text(checkedValues.join(', '));
-                }, 500); // Adjust the duration of the shuffle animation as needed (500ms in this example)
-            });
-        });
-    </script>
-
-
-
-
-
-
+    <script src="{{ asset('js/create-package.js') }}"></script>
 @endsection
