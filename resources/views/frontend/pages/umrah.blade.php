@@ -342,7 +342,7 @@
     </section>
 
     <!-- Tips & tricks-->
-    <section class="section section-lg novi-background bg-cover bg-default text-center">
+    <section class="section section-lg novi-background bg-cover bg-default text-center extra">
         <div class="container-wide">
             <div class="row row-50">
                 <div class="col-sm-12">
@@ -428,7 +428,7 @@
         </div>
     </section>
 
-    <section class="section section-lg text-center bg-gray-lighter novi-background bg-cover">
+    <section class="section section-lg text-center bg-gray-lighter novi-background bg-cover extra">
         <div class="container container-bigger">
             <h3>testimonials</h3>
             <div class="divider divider-decorate"></div>

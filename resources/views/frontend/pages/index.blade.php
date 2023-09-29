@@ -138,10 +138,10 @@
 
     <section class="section section-variant-1 bg-default novi-background bg-cover">
         <div class="container container-wide">
-            <div class="row row-fix justify-content-xl-center row-30 text-center text-xl-left">
+            <div class="row row-fix justify-content-xl-end row-30 text-center text-xl-left">
                 <div class="col-xl-8">
                     <div class="parallax-text-wrap">
-                        <h3>Our Best Packages</h3><span class="parallax-text">Best Package</span>
+                        <h3>Our Best Tours</h3><span class="parallax-text">Hot tours</span>
                     </div>
                     <hr class="divider divider-decorate">
                 </div>
@@ -378,7 +378,7 @@
     </section>
 
     <!-- Tips & tricks-->
-    <section class="section section-lg novi-background bg-cover bg-default text-center">
+    <section class="section section-lg novi-background bg-cover bg-default text-center extra">
         <div class="container-wide">
             <div class="row row-50">
                 <div class="col-sm-12">
@@ -423,6 +423,85 @@
             </div>
         </div>
     </section>
+
+    <section class="section section-lg text-center bg-gray-lighter novi-background bg-cover extra">
+        <div class="container container-bigger">
+            <h3>testimonials</h3>
+            <div class="divider divider-decorate"></div>
+            <!-- Owl Carousel-->
+            <div class="owl-carousel owl-layout-1" data-items="1" data-dots="true" data-nav="true"
+                data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-autoplay="true">
+                <article class="quote-boxed">
+                    <div class="quote-boxed-aside"><img class="quote-boxed-image" src="images/quote-user-1-210x210.jpg"
+                            alt="" width="210" height="210" />
+                    </div>
+                    <div class="quote-boxed-main">
+                        <div class="quote-boxed-text">
+                            <p>I wanted to thank you very much for planning the trip to France for my boyfriend and me. It
+                                was amazing and exceeded my expectations! We had a wonderful time and were very pleased with
+                                the accommodations in Paris and Bayeux. Our private/small tour guides were fantastic! I
+                                appreciate all the effort to get us to the Eiffel Tower finally. </p>
+                        </div>
+                        <div class="quote-boxed-meta">
+                            <p class="quote-boxed-cite">Ann McMillan</p>
+                            <p class="quote-boxed-small">Regular Customer</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="quote-boxed">
+                    <div class="quote-boxed-aside"><img class="quote-boxed-image" src="images/quote-user-2-210x210.jpg"
+                            alt="" width="210" height="210" />
+                    </div>
+                    <div class="quote-boxed-main">
+                        <div class="quote-boxed-text">
+                            <p>I had a marvelous time in our travels to Madagascar, Zimbabwe and Botswana, I had just
+                                wonderful experiences.I loved the location of the Gorges Camp as I felt like it was only the
+                                time we got to see real and rural Africans and how they truly lived. The service was amazing
+                                and everyone was very attentive!</p>
+                        </div>
+                        <div class="quote-boxed-meta">
+                            <p class="quote-boxed-cite">Debra Ortega</p>
+                            <p class="quote-boxed-small">Regular Customer</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="quote-boxed">
+                    <div class="quote-boxed-aside"><img class="quote-boxed-image" src="images/quote-user-3-210x210.jpg"
+                            alt="" width="210" height="210" />
+                    </div>
+                    <div class="quote-boxed-main">
+                        <div class="quote-boxed-text">
+                            <p>Just wanted to say many, many thanks for helping me set up an amazing Costa Rican adventure!
+                                My nephew and I had a blast! All of the accommodations were perfect as were the activities
+                                that we did (canopy, coffee tour, hikes, fishing, and massages!) We have such fond memories
+                                and can't thank you enough!</p>
+                        </div>
+                        <div class="quote-boxed-meta">
+                            <p class="quote-boxed-cite">Samantha Smith</p>
+                            <p class="quote-boxed-small">Regular Customer</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-md text-center text-md-left bg-gray-700 novi-background bg-cover extra">
+        <div class="container container-wide">
+            <div class="row row-fix row-50 justify-content-sm-center">
+                <div class="col-xxl-8">
+                    <div class="box-cta box-cta-inline">
+                        <div class="box-cta-inner">
+                            <h3 class="box-cta-title">Buy a tour without leaving your home</h3>
+                            <p>Using our website, you can book any tour just in a couple of clicks.</p>
+                        </div>
+                        <div class="box-cta-inner"><a class="btn sbmt" href="#">Book Now</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 @endsection
 @push('scripts')

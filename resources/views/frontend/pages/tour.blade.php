@@ -210,7 +210,7 @@
     </section>
 
     <!-- Tips & tricks-->
-    <section class="section section-lg novi-background bg-cover bg-default text-center">
+    <section class="section section-lg novi-background bg-cover bg-default text-center extra">
         <div class="container-wide">
             <div class="row row-50">
                 <div class="col-sm-12">
